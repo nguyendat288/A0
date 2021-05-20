@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a">
+<button><input type="button" value="Find" onclick="find1()"></button>
+
+<script>
+    function find1() {
+        let ad = ['hello', 'partner', 'good morning', 'lunch'];
+        let bd = ['xin chao', 'doi tac', 'chao buoi sang', 'bua trua'];
+        let str = document.getElementById('a').value;
+        for (i = 0; i <ad.length;i++ ){
+            if(str==ad[i]){
+                document.getElementById('b').innerHTML = bd[i];break;
+            }else if(str==bd[i]) {
+                document.getElementById('b').innerHTML = ad[i];
+                break;
+            }
+        else  document.getElementById('b').innerHTML ='kó';
+    }
+    }
+
+</script>
+<p id="b"></p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr=[];
+  let n=+prompt("nhập số phần tử =");
+  for(let i=0;i<n;i++){
+    arr[i]=+prompt('a['+i+']=');
+  }
+  let frist=0;
+  let last=arr.length-1;
+  let b;
+  while (frist<last){
+    b=arr[frist];
+    arr[frist]=arr[last];
+    arr[last]=b;
+    frist++;
+    last--;
+  }
+  document.write(arr);
+</script>
+</body>
+</html>

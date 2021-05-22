@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count=0;
+    let arr = [4, 5, 6, 7,'hello', 'skin', null, NaN, undefined];
+    for (let i = 0; i < arr.length; i++) {
+        if (!isNaN(arr[i])) {
+            count++;
+        }
+    }
+    document.write('So ky tu so trong mang la: ' + count);
+</script>
+</body>
+</html>

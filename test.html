@@ -6,27 +6,20 @@
 </head>
 <body>
 <script>
-    var str = prompt("nhập chuỗi =");
-    var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    var LOWER = 'abcdefghijklmnopqrstuvwxyz';
-    var result = [];
+    let arr1 = [1, 2, 3, 4, 5, 6, 'asd', 'das']
+    let arr2 = [2, 3, 4, 5, 6, 7, 8, 'god', 'dog'];
 
-    for(var x=0; x<str.length; x++)
-    {
-        if(UPPER.indexOf(str[x]) !== -1)
-        {
-            result.push(str[x].toLowerCase());
-        }
-        else if(LOWER.indexOf(str[x]) !== -1)
-        {
-            result.push(str[x].toUpperCase());
-        }
-        else
-        {
-            result.push(str[x]);
-        }
+    function remove(arr, index) {
+        arr[index] = "";
+        // removed index become blank string;
+        // arr length unchanged
+        console.log(arr);
     }
-    console.log(result.join(''));
+
+    console.log(arr1);
+    console.log(arr2);
+    remove(arr1, 5);
+    remove(arr2, 4);
 </script>
 </body>
 </html>
